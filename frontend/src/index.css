@@ -1,0 +1,6 @@
+@import "tailwindcss"; /* 최신 버전은 이 한 줄이면 충분합니다 */
+
+/* 또는 기존 방식 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
