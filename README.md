@@ -1,12 +1,20 @@
 # MediLink — 알약 AI 복약관리 서비스
 
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.110-009688?logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-Vite-61DAFB?logo=react&logoColor=black)
+![Oracle](https://img.shields.io/badge/Oracle-XE%2021c-F80000?logo=oracle&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-AI%20Search-0078D4?logo=microsoftazure&logoColor=white)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-Object%20Detection-00FFFF)
+
 > 2026.02 ~ 2026.04 | 5인 팀 프로젝트 | Microsoft Azure 협업
+
 
 <br>
 
 ## 만들게 된 이유
 
-약국에서 받아온 약 봉투를 열면 비슷하게 생긴 알약들이 가득합니다. 어떤 게 무슨 약인지, 같이 먹어도 되는지 — 전문 지식 없이는 알기가 어렵죠.
+약국에서 받아온 약 봉투를 열면 비슷하게 생긴 알약들이 가득합니다. 어떤 게 무슨 약인지, 같이 먹어도 되는지 전문 지식 없이는 알기가 어렵죠.
 
 특히 여러 병원을 다니는 어르신들이나 영양제를 많이 챙겨 드시는 분들은 병용금기 위험에 노출되어 있지만, 이걸 한 번에 확인할 수 있는 서비스가 마땅히 없었습니다.
 
@@ -14,11 +22,11 @@
 
 <br>
 
-## 핵심 설계 원칙 — "결정은 공식 데이터가, 보조는 AI가"
+## "결정은 공식 데이터가, 보조는 AI가"
 
 AI 서비스에서 가장 위험한 건 그럴듯하지만 틀린 정보를 자신있게 말하는 것입니다. 의약품 정보에서 이런 할루시네이션은 실제 안전사고로 이어질 수 있습니다.
 
-그래서 병용금기 판단과 의약품 안전 경고는 **식약처 DUR 공식 데이터**만으로 처리하고, AI는 이미지 인식과 자연어 설명 생성 보조 역할만 담당하도록 역할을 명확히 나눴습니다. 근거가 없으면 아예 생성하지 않는 로직도 넣었고요.
+그래서 병용금기 판단과 의약품 안전 경고는 **식약처 DUR 공식 데이터**만으로 처리하고, AI는 이미지 인식과 자연어 설명 생성 보조로만 쓰도록 명확히 나눴습니다. 근거가 없으면 아예 생성하지 않는 로직도 넣었고요.
 
 <br>
 
@@ -155,6 +163,15 @@ medilink-portfolio/
 - [병용금기 경고 엔진](./docs/05_dur_warning.md)
 - [모델 실험 결과](./docs/06_model_experiments.md)
 - [회고 & 트러블슈팅](./docs/07_retrospective.md)
+
+<br>
+
+
+## 팀 원본 레포
+
+이 레포는 개인 포트폴리오 정리본입니다. 팀 전체 코드는 아래 원본 레포에서 확인할 수 있습니다.
+
+→ [todn0320/pill-ai_merge](https://github.com/todn0320/pill-ai_merge)
 
 <br>
 
